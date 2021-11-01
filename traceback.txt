@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 413, in script
+    policial "Entâo... Vocês viram mais alguma coisa que pode ajudar no caso?"
+Exception: Sayer 'policial' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 413, in script
+    policial "Entâo... Vocês viram mais alguma coisa que pode ajudar no caso?"
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'policial' is not defined.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.8.1895
+Love Game 1.0
+Sun Oct 31 17:35:19 2021
