@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 193: u'e' is not a keyword argument or valid child for the label statement.
-    e "You picked swimming!"
-     ^
+File "game/status.rpy", line 44: vbox expects a non-empty block.
+    vbox:
+         ^
 
-Ren'Py Version: Ren'Py 7.4.8.1895
-Sun Oct 31 19:49:33 2021
+Ren'Py Version: Ren'Py 7.4.10.2178
+Mon Nov  1 21:04:22 2021

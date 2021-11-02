@@ -13,14 +13,12 @@ define anon = Character("??",color="#fff")
 
 #NPC
 define mom = Character("Mãe")
-define lucas = Character("Lucas")
-define anna = Character("Anna")
-define miguel = Character("Miguel")
-define alice = Character("Alice")
-define pedro = Character("Pedro")
+define lucas = Character("[lucas_1.name]")
+define anna = Character("[anna_1.name]")
+define miguel = Character("[miguel_1.name]")
+define alice = Character("[alice_1.name]")
+define pedro = Character("[pedro_1.name]")
 define policial = Character("Policial")
-
-image pink = "#FFC1D7"
 
 #Definição de variaveis
 
@@ -31,101 +29,83 @@ default var_lucas = False
 default var_alice = False
 default var_mauricio = False
 
-$anna_pontos = -2
-$miguel_pontos = 0
-$pedro_pontos = 0
-$lucas_pontos = -1
-$alice_pontos = 1
-$mauricio_pontos = 0
-
 # images
 
 #mapa
 image mapa_cidade = "/images/mapa.png"
 
-# xiong
-image xiong_normal = "/images/Characters/xiong_xue/normal.png"
-image xiong_feliz = "/images/Characters/xiong_xue/feliz.png"
-image xiong_confusa = "/images/Characters/xiong_xue/confusa.png"
-image xiong_medo = "/images/Characters/xiong_xue/medo.png"
-image xiong_neko = "/images/Characters/xiong_xue/neko.png"
-image xiong_sexy = "/images/Characters/xiong_xue/sexy.png"
-image xiong_apaixonada = "/images/Characters/xiong_xue/apaixonada.png"
-image xiong_raiva = "/images/Characters/xiong_xue/raiva.png"
+#background
+image pink = "#FFC1D7"
+
+#album
+image album_1 = "/images/album/red.jpg"
+image foto_1 = "/images/album/foto.png"
+
 
 # alice
-image alice_normal = "/images/Characters/alice_guerrero/normal.png"
-image alice_feliz = "/images/Characters/alice_guerrero/feliz.png"
-image alice_confusa = "/images/Characters/alice_guerrero/confusa.png"
-image alice_medo = "/images/Characters/alice_guerrero/medo.png"
-image alice_neko = "/images/Characters/alice_guerrero/neko.png"
-image alice_sexy = "/images/Characters/alice_guerrero/sexy.png"
-image alice_apaixonada = "/images/Characters/alice_guerrero/apaixonada.png"
-image alice_raiva = "/images/Characters/alice_guerrero/raiva.png"
+image alice_normal = "/images/Characters/Alice/normal.png"
+image alice_feliz = "/images/Characters/Alice/feliz.png"
+image alice_confusa = "/images/Characters/Alice/confusa.png"
+image alice_medo = "/images/Characters/Alice/medo.png"
+image alice_neko = "/images/Characters/Alice/neko.png"
+image alice_sexy = "/images/Characters/Alice/sexy.png"
+image alice_apaixonada = "/images/Characters/Alice/apaixonada.png"
+image alice_raiva = "/images/Characters/Alice/raiva.png"
 
-# ayisha
-image ayisha_normal = "/images/Characters/ayisha_okoye/normal.png"
-image ayisha_feliz = "/images/Characters/ayisha_okoye/feliz.png"
-image ayisha_confusa = "/images/Characters/ayisha_okoye/confusa.png"
-image ayisha_medo = "/images/Characters/ayisha_okoye/medo.png"
-image ayisha_neko = "/images/Characters/ayisha_okoye/neko.png"
-image ayisha_sexy = "/images/Characters/ayisha_okoye/sexy.png"
-image ayisha_apaixonada = "/images/Characters/ayisha_okoye/apaixonada.png"
-image ayisha_raiva = "/images/Characters/ayisha_okoye/raiva.png"
+# miguel
+image miguel_normal = "/images/Characters/Miguel/normal.png"
+image miguel_feliz = "/images/Characters/Miguel/feliz.png"
+image miguel_confusa = "/images/Characters/Miguel/confusa.png"
+image miguel_medo = "/images/Characters/Miguel/medo.png"
+image miguel_neko = "/images/Characters/Miguel/neko.png"
+image miguel_sexy = "/images/Characters/Miguel/sexy.png"
+image miguel_apaixonada = "/images/Characters/Miguel/apaixonada.png"
+image miguel_raiva = "/images/Characters/Miguel/raiva.png"
 
-# beatriz
-image beatriz_normal = "/images/Characters/beatriz_souza/normal.png"
-image beatriz_feliz = "/images/Characters/beatriz_souza/feliz.png"
-image beatriz_confusa = "/images/Characters/beatriz_souza/confusa.png"
-image beatriz_medo = "/images/Characters/beatriz_souza/medo.png"
-image beatriz_neko = "/images/Characters/beatriz_souza/neko.png"
-image beatriz_sexy = "/images/Characters/beatriz_souza/sexy.png"
-image beatriz_apaixonada = "/images/Characters/beatriz_souza/apaixonada.png"
-image beatriz_raiva = "/images/Characters/beatriz_souza/raiva.png"
+# anna
+image anna_normal = "/images/Characters/Anna/normal.png"
+image anna_feliz = "/images/Characters/Anna/feliz.png"
+image anna_confusa = "/images/Characters/Anna/confusa.png"
+image anna_medo = "/images/Characters/Anna/medo.png"
+image anna_neko = "/images/Characters/Anna/neko.png"
+image anna_sexy = "/images/Characters/Anna/sexy.png"
+image anna_apaixonada = "/images/Characters/Anna/apaixonada.png"
+image anna_raiva = "/images/Characters/Anna/raiva.png"
 
-# genevieve
-image genevieve_normal = "/images/Characters/genevieve_dubois/normal.png"
-image genevieve_feliz = "/images/Characters/genevieve_dubois/feliz.png"
-image genevieve_confusa = "/images/Characters/genevieve_dubois/confusa.png"
-image genevieve_medo = "/images/Characters/genevieve_dubois/medo.png"
-image genevieve_neko = "/images/Characters/genevieve_dubois/neko.png"
-image genevieve_sexy = "/images/Characters/genevieve_dubois/sexy.png"
-image genevieve_apaixonada = "/images/Characters/genevieve_dubois/apaixonada.png"
-image genevieve_raiva = "/images/Characters/genevieve_dubois/raiva.png"
+# pedro
+image pedro_normal = "/images/Characters/Pedro/normal.png"
+image pedro_feliz = "/images/Characters/Pedro/feliz.png"
+image pedro_confusa = "/images/Characters/Pedro/confusa.png"
+image pedro_medo = "/images/Characters/Pedro/medo.png"
+image pedro_neko = "/images/Characters/Pedro/neko.png"
+image pedro_sexy = "/images/Characters/Pedro/sexy.png"
+image pedro_apaixonada = "/images/Characters/Pedro/apaixonada.png"
+image pedro_raiva = "/images/Characters/Pedro/raiva.png"
 
-# helena
-image helena_normal = "/images/Characters/helena_lawson/normal.png"
-image helena_feliz = "/images/Characters/helena_lawson/feliz.png"
-image helena_confusa = "/images/Characters/helena_lawson/confusa.png"
-image helena_medo = "/images/Characters/helena_lawson/medo.png"
-image helena_neko = "/images/Characters/helena_lawson/neko.png"
-image helena_sexy = "/images/Characters/helena_lawson/sexy.png"
-image helena_apaixonada = "/images/Characters/helena_lawson/apaixonada.png"
-image helena_raiva = "/images/Characters/helena_lawson/raiva.png"
 
-# priya
-image priya_normal = "/images/Characters/priya_chaudhari/normal.png"
-image priya_feliz = "/images/Characters/priya_chaudhari/feliz.png"
-image priya_confusa = "/images/Characters/priya_chaudhari/confusa.png"
-image priya_medo = "/images/Characters/priya_chaudhari/medo.png"
-image priya_neko = "/images/Characters/priya_chaudhari/neko.png"
-image priya_sexy = "/images/Characters/priya_chaudhari/sexy.png"
-image priya_apaixonada = "/images/Characters/priya_chaudhari/apaixonada.png"
-image priya_raiva = "/images/Characters/priya_chaudhari/raiva.png"
+# isabella
+image isabella_normal = "/images/Characters/Isabella/normal.png"
+image isabella_feliz = "/images/Characters/Isabella/feliz.png"
+image isabella_confusa = "/images/Characters/Isabella/confusa.png"
+image isabella_medo = "/images/Characters/Isabella/medo.png"
+image isabella_neko = "/images/Characters/Isabella/neko.png"
+image isabella_sexy = "/images/Characters/Isabella/sexy.png"
+image isabella_apaixonada = "/images/Characters/Isabella/apaixonada.png"
+image isabella_raiva = "/images/Characters/Isabella/raiva.png"
 
-# sasha
-image sasha_normal = "/images/Characters/sasha_petrova/normal.png"
-image sasha_feliz = "/images/Characters/sasha_petrova/feliz.png"
-image sasha_confusa = "/images/Characters/sasha_petrova/confusa.png"
-image sasha_medo = "/images/Characters/sasha_petrova/medo.png"
-image sasha_neko = "/images/Characters/sasha_petrova/neko.png"
-image sasha_sexy = "/images/Characters/sasha_petrova/sexy.png"
-image sasha_apaixonada = "/images/Characters/sasha_petrova/apaixonada.png"
-image sasha_raiva = "/images/Characters/sasha_petrova/raiva.png"
+# lucas
+image lucas_normal = "/images/Characters/Lucas/normal.png"
+image lucas_feliz = "/images/Characters/Lucas/feliz.png"
+image lucas_confusa = "/images/Characters/Lucas/confusa.png"
+image lucas_medo = "/images/Characters/Lucas/medo.png"
+image lucas_neko = "/images/Characters/Lucas/neko.png"
+image lucas_sexy = "/images/Characters/Lucas/sexy.png"
+image lucas_apaixonada = "/images/Characters/Lucas/apaixonada.png"
+image lucas_raiva = "/images/Characters/Lucas/raiva.png"
 
 # The game starts here.
 
-label start:
+label start:    
     #Warning content
     scene pink
     
@@ -137,12 +117,16 @@ label start:
     "Os passageiros começam a sair e você pega sua malas"
     "Sua familia está te esperando do lado de fora"
     $ yn = renpy.input("Seu nome")
+    $ main_1.sobrenome = renpy.input("Seu sobrenome")
     $ yn = yn.strip()
+    $ main_1.name = yn
     if yn == "Clara":
         "Você de novo... Sentimos sua falta..."
 
+    show isabella_normal
     mom "[yn] que saudade!"
     y "Oi mãe!"
+    $isabella_1.relation = "Mâe"
     "Vocês duas se abraçam"
     "Vocês vão indo para casa"
     "Pela janela você ve a cidade que cresceu"
@@ -150,36 +134,104 @@ label start:
     mom "Sim, as coisas não mudam muito por aqui"
     mom "Eu imagino que seja diferente de onde você está, você foi pra São Paulo afinal"
     y "Sim, é bem diferente, mas eu gosto daqui"
+    hide isabella_normal
     "Vocês chegam em casa e você se instala no seu antigo quarto"
     y "Nada mudou mesmo..."
     "Você vê uma foto antiga de você e seus amigos na época"
+    
+    $renpy.notify("Galeria Desbloqueada")
+    show screen Gallery_UI
+    show foto_1 at center:    
+        yoffset -200
+    ## This is how you unlock the CG.
+    ## This "persistent.foto" is the condition used for "foto" button.
+    $ persistent.foto = True
     y "É... Isso mudou..."
     mom "[yn], preciso ir no mercado, você quer vir comigo?"
     y "Ok!"
+    hide foto_1
     "Vocês vão para o mercado"
     "Você está pegando itens na lista que sua mãe pediu"
     anon "[yn]??"
     anon "[yn]? Nossa quanto tempo!"
-    y "Uau... Alice!"
+    $renpy.notify("Bloco de Notas Desbloqueado")
+    show screen Stats_UI
+    show alice_normal
+
+    if main_1.name == "Alice":
+        $alice_1.name = "Aline"
+    else:
+        $alice_1.name = "Alice"
+
+    y "Uau... [alice_1.name!u]!"
+    $renpy.notify("Você Descobriu Algo Novo")
     alice "Meu deus, você não tinha ido pra USP?"
-    y "Sim! E você não tinha ido pra UFMG?"
+    y "Sim! E você não tinha ido pra UFMG? A nova mediciner do grupo"
+    $renpy.notify("Você Descobriu Algo Novo")
+    $ alice_1.major = "Médica"
     alice "Sim, estou passando as férias agora na casa dos meus pais, eu cheguei tem uma semana"
     y "Ah eu também, cheguei hoje mais cedo"
     alice "Nossa, que legal a gente se encontrar"
     y "É mesmo"
-    alice "Você se lembra do Pedro?"
-    y "Pedro Silva? Lembro sim"
+    hide alice_normal
+    show alice_normal at right
+    show isabella_normal at left
+    mom "Olá [alice_1.name]! Quanto tempo"
+
+    if main_1.name == "Isabella" or main_1.name == "Isabela":
+        $isabella_1.name = "Isadora"
+    else:
+        $isabella_1.name = "Isabella"
+
+    alice "Oi dona [isabella_1.name]!"
+    $renpy.notify("Você Descobriu Algo Novo")
+    $isabella_1.sobrenome = main_1.sobrenome
+    $isabella_1.imageName = "images/Characters/Isabella/normal.png"
+    mom "Que bom ver você"
+    alice "Sim, é ótimo te ver"
+    mom "Bom, vou deixar vocês à sós pra conversar"
+    hide alice_normal
+    hide isabella_normal
+    show alice_normal
+    if main_1.name == "Pedro":
+        $pedro_1.name = "Jorge"
+    else:
+        $pedro_1.name = "Pedro"
+
+    alice "Você se lembra do [pedro_1.name]?"
+    if main_1.sobrenome == "Silva":
+        $pedro_1.sobrenome = "Souza"
+    else:
+        $pedro_1.sobrenome = "Silva"
+    y "[pedro_1.name] [pedro_1.sobrenome]? Lembro sim"
+    $renpy.notify("Você Descobriu Algo Novo")
     alice "Ele está dando uma festa hoje na casa dele, e me chamou pra ir, quer ir junto de surpresa?"
     y "Ele ainda mora no mesmo lugar?"
     alice "Sim, ele nunca saiu. Ele tentou seguir a carreira de jogador mas nunca deu certo, agora ele é eletricista"
     y "Puxa, não sabia. Mas sobre a festa, aceito ir sim, acho que vai ser bom rever todo mundo"
     alice "Que ótimo! Te busco amanhã mais tarde então"
+    hide alice_normal
     #mapa da cidade desbloqueado
 
 
-    "Alice te busca em casa e vocês vão para a festa"
-    "Chegando na festa, esta muita gente lá"
+    "[alice_1.name] te busca em casa e vocês vão para a festa"
+    "Chegando na festa, está muita gente lá"
     "Você reconhece alguns amigos antigos"
+
+    if main_1.name == "Lucas":
+        $lucas_1.name = "Jorge"
+    else:
+        $lucas_1.name = "Lucas"
+
+    if main_1.name == "Anna" or main_1.name == "Ana":
+        $anna_1.name = "Anita"
+    else:
+        $anna_1.name = "Anna"
+
+    if main_1.name == "Miguel":
+        $miguel_1.name = "Jorge"
+    else:
+        $miguel_1.name = "Miguel"
 
     label primeiro_menu:
     if var_lucas and var_anna and var_miguel and var_pedro: 
@@ -187,29 +239,34 @@ label start:
     menu:
         "Com quem você fala primeiro?"
 
-        "Lucas" if not var_lucas:
+        "[lucas_1.name]" if not var_lucas:
             $var_lucas = True
             jump c1_lucas
 
-        "Anna" if not var_anna:
+        "[anna_1.name]" if not var_anna:
             $var_anna = True
             jump c1_anna
 
-        "Miguel" if not var_miguel:
+        "[miguel_1.name]" if not var_miguel:
             $var_miguel = True
             jump c1_miguel
 
-        "Pedro" if not var_pedro:
+        "[pedro_1.name]" if not var_pedro:
             $var_pedro = True
             jump c1_pedro
 
     label c1_lucas:
-    y "Oi Lucas, quanto tempo"
+    show lucas_normal
+    y "Oi [lucas_1.name], quanto tempo"
+    $lucas_1.imageName = "/images/Characters/Lucas/normal.png"
+    $renpy.notify("Você Descobriu Algo Novo")
     lucas "É, não o suficiente"
     y "Nossa, o que aconteceu"
-    lucas "Olha, eu queria poder falar com você, mas a Anna tem razão"
+    lucas "Olha, eu queria poder falar com você, mas a [anna_1.name] tem razão"
+    $renpy.notify("Você Descobriu Algo Novo")
     lucas "A gente juntos, só causa problemas"
     "Ele vira de costas e vai embora..."
+    hide lucas_normal
 
     menu:
         "Tentar chamar ele":
@@ -218,18 +275,25 @@ label start:
             jump primeiro_menu
     
     label c2_lucas:
-    y "Lucas, espera..."
+    show lucas_normal
+    y "[lucas_1.name], espera..."
     "Você tenta puxar ele pelo braço"
     y "Eu só queria reencontrar todo mundo, nós éramos tão amigos, tão próximos"
     y "Eu queria ter isso de novo..."
+    $renpy.notify("+1 ponto")
+    $lucas_1.affection +=1
     lucas "Eu..."
     "Lucas tenta falar, mas você vê ao longe uma mulher encarando vocês dois"
     lucas "Só é melhor a gente ficar longe"
     "Ele vai embora"
+    hide lucas_normal
     jump primeiro_menu
 
     label c1_anna:
-    y "Oi Anna"
+    show anna_normal
+    y "Oi [anna_1.name]"
+    $anna_1.imageName = "/images/Characters/Anna/normal.png"
+    $renpy.notify("Você Descobriu Algo Novo")
     "Ela finge que não escutou você"
     "Você encosta no braço dela"
     anna "Você não entende mesmo quando alguém não quer conversar com você"
@@ -240,11 +304,26 @@ label start:
     anna "Ninguém quer você aqui"
     if var_lucas == True:
         anna "E fica longe do meu namorado também, a gente quer distância de vocês todos"
+        if anna_1.name == "Anna":
+            $lucas_1.relation = "Namorado de Anna"
+        else:
+            $lucas_1.relation = "Namorado de Anita"
+        
+        if lucas_1.name == "Lucas":
+            $anna_1.relation = "Namorada de Lucas"
+        else:
+            $anna_1.relation = "Namorada de Jorge"
+        
+        $renpy.notify("Você Descobriu Algo Novo")
     "Ela vai embora"
+    hide anna_normal
     jump primeiro_menu
 
     label c1_miguel:
-    y "Oi Miguel"
+    show miguel_normal
+    $miguel_1.imageName = "/images/Characters/Miguel/normal.png"
+    y "Oi [miguel_1.name]"
+    $renpy.notify("Você Descobriu Algo Novo")
     miguel "Oi [yn], quanto tempo"
     y "Sim, bastante tempo"
     if var_lucas == True or var_anna == True:
@@ -266,11 +345,15 @@ label start:
         y "É... Me dewsculpa por isso"
         y "Acho que eu precisava de um recomeço"
         $ renpy.notify("+1 ponto")
+        $miguel_1.affection += 1
         miguel "Compreensível..."
         miguel "Eu acho que faria a mesma coisa se tivesse saído daqui"
         y "E você, o que faz da vida?"
         miguel "Bom, eu sou chaveiro, não é nada tão interessante quanto o que você faz, mas paga as contas"
+        $renpy.notify("Você Descobriu Algo Novo")
+        $miguel_1.major = "Chaveiro"
         miguel "Depois que meus pais morreram eu a casa deles ficou pra mim, e as dividas também"
+        $miguel_1.history = "Pais mortos, cheio de dívidas"
         miguel "Fiz alguns cursos e agora trabalho por aqui"
         miguel "Então não sairia dessa cidade nem se eu pudesse"
         y "Entendi"
@@ -282,34 +365,41 @@ label start:
         $ renpy.notify("-1 ponto")
         miguel "Bom, quando você não se importa com ninguém, é muito dificil esperar que os outros se importem também"
         miguel "Até outro dia"
-    
+        
+    hide miguel_normal
     jump primeiro_menu
 
     label c1_pedro:
-    y "Oi Pedro"
+    show pedro_feliz
+    $pedro_1.imageName = "/images/Characters/Pedro/normal.png"
+    y "Oi [pedro_1.name]"
     pedro "[yn]! Nooossa"
     "Pedro vem te abraçar, quando ele chega perto você sente o cheiro de cigarro e bebida"
+    $pedro_1.history = "Alcoolatra "
+    $renpy.notify("Você Descobriu Algo Novo")
     pedro "Que bom que eu te convidei pra festa"
     pedro "Eu te convidei pra festa né?"
     menu:
         "Sim":
             $pedro_pontos = 2
 
-        "Não, vim com a Alice":
+        "Não, vim com a [alice_1.name]":
             $pedro_pontos = 1
 
         "Você está bebendo muito":
             $pedro_pontos = 0
     
     if pedro_pontos ==1:
-        "Não, vim com a Alice"
+        "Não, vim com a [alice_1.name]"
         $ renpy.notify("+1 ponto")
-        pedro "Alice veio também??? Que legaaal"
+        $pedro_1.affection += 1
+        pedro "[alice_1.name] veio também??? Que legaaal"
         y "Sim, ela está por aí"
         
     if pedro_pontos == 2:
         y "Sim"
         $ renpy.notify("+2 pontos")
+        $pedro_1.affection += 2
         pedro "Ah eu sabia, eu sou muito bom"
 
     if pedro_pontos >0:
@@ -322,13 +412,14 @@ label start:
         pedro "E aparentemente eles tinham razão"
         y "Não fale assim, você era ótimo nos esportes, sempre achei que você ia virar profissional"
         pedro "Era o sonho, até que eu tive o acidente"
+        $pedro_1.history = pedro_1.history + "Bom nos esportes, sofreu acidente"
+        $renpy.notify("Você Descobriu Algo Novo")
         y "Desculpa... Eu não sabia"
         pedro "Tá tudo bem"
         pedro "Mas fico feliz que pelo menos um de nós está fazendo o que queria"
-        pedro "Você veio com a Alice né? Vou procurar ela então"
+        pedro "Você veio com a [alice_1.name] né? Vou procurar ela então"
         pedro "Muito bom ver você"
         "Ele sai cambaleando"
-        jump primeiro_menu
     if pedro_pontos == 0:
         y "Você está bebendo demais"
         $ renpy.notify("-1 pontos")
@@ -336,25 +427,26 @@ label start:
         pedro "Mas acho que pra você é fácil julgar o que fazemos aqui"
         pedro "Você deixou tudo pra trás, mas nem todo mundo pode fazer isso"
         "Ele vai embora"
-        jump primeiro_menu
-
+    
+    hide pedro_feliz
+    jump primeiro_menu
 
     label choice_scene:
     "Você falou com todo mundo"
-    "Você se encontra novamente com Alice e Pedro"
+    "Você se encontra novamente com [alice_1.name] e [pedro_1.name]"
     "Eles estão conversando e se divertindo"
     "A noite vai passando, você bebe um pouco"
     "cerca de 1 da manhã, poucas pessoas continuam na festa"
     "Vocês escutam um barulho vindo da garagem"
     pedro "Que bosta, alguem deve ter quebrado a porta saindo com o carro"
     pedro "Vem em ajudar a ver o que é"
-    "Você, Alice, Pedro e Anna vão até a garagem"
+    "Você, [alice_1.name], [pedro_1.name] e [anna_1.name] vão até a garagem"
     anna "Tem alguma coisa embaixo da porta, ela não consegue fechar"
     "A garage está escura, ninguem consegue identificar o que é"
     "Vocês chegam mais perto"
     "É uma mochila"
     pedro "ok, quem deixou a mochila no meio da porta da garagem?"
-    anna "Pera. Essa mochila é do Lucas"
+    anna "Pera. Essa mochila é do [lucas_1.name]"
     pedro "Ele já foi embora? E deixou a mochila aqui? Que merda"
     anna "Não, ele não foi, ele veio comigo, está sem carro"
     alice "Estranho, e onde ele está?"
@@ -364,11 +456,11 @@ label start:
     
     menu:
         "Ele pode ter ido com outra pessoa sem te avisar":
-            $anna_pontos = 0
+            $anna_1.affection += 0
         "Ele deve estar por aqui, fiquem tranquilos":
-            $anna_pontos = 1
+            $anna_1.affection += 1
     
-    if anna_pontos == 0:
+    if anna_1.affection == 0:
         y "Ele pode ter ido com outra pessoa sem te avisar"
         $renpy.notify("-1 pontos")
         anna "O que você quer dizer com isso?"
@@ -381,7 +473,7 @@ label start:
         pedro "Vamos procurar ele então"
         anna "Tá"
     
-    if anna_pontos == 1:
+    if anna_1.affection == 1:
         y "Ele deve estar por aqui, fiquem tranquilos"
         $renpy.notify("+1 pontos")
         anna "Exatamente, obrigada [yn]"
@@ -389,30 +481,30 @@ label start:
 
     "Vocês olham um pouco pela garagem"
     "Até que..."
-    pedro "LUCAS!"
-    "Vocês encontram Lucas dormindo encostado na parede"
+    pedro "[lucas_1.name!u]!"
+    "Vocês encontram [lucas_1.name] dormindo encostado na parede"
     anna "Meu deus, você me assustou!"
     "Ele não responde"
 
     "Você tenta acordá-lo encostando em seu ombro"
-    y "Lucas... Acorda..."
+    y "[lucas_1.name]... Acorda..."
     "Você encosta a mão em seu ombro"
     "Está rígido e frio"
     alice "Alguém acende a luz por favor?"
     "Pedro acende a luz da garagem"
-    anna "LUCAS!"
+    anna "[lucas_1.name!u]!"
     "Quando a luz acende vocês veem, que tem uma faca na barriga de Lucas"
     "Você dá um pulo para trás e o corpo cai, revelando uma grande macha de sangue na parede atrás do corpo"
     alice "O QUE ESTÁ ACONTECENDO?"
     pedro "Alguem liga pra ambulância, polícia, sei lá"
     anna "MEU DEUS O QUE ACONTECEU!"
-    "Alice tenta confortar Anna"
+    "[alice_1.name] tenta confortar Anna"
     anna "Eu vou ligar pra polícia!"
-    "Anna sai da garagem acompanhada por Pedro"
-    "Você e Alice permanecem na garagem observando o corpo"
+    "[anna_1.name] sai da garagem acompanhada por [pedro_1.name]"
+    "Você e [alice_1.name] permanecem na garagem observando o corpo"
     "Vocês chegam perto e na ponta da faca tem uma mensagem"
     "Ele mereceu, e vocês todos também"
-    "Alice olha pra você e rapidamente tira a mensagem da faca e a guarda no bolso"
+    "[alice_1.name] olha pra você e rapidamente tira a mensagem da faca e a guarda no bolso"
     "alguns minutos depois você escuta a sirene"
     "a policia vem e leva o corpo"
     "Eles fazem algumas perguntas para você e Alice"
