@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/status.rpy", line 44: vbox expects a non-empty block.
-    vbox:
-         ^
+File "game/characters.rpy", line 1: expected statement.
+    from typing import DefaultDict
+                                  ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Mon Nov  1 21:04:22 2021
+Sat Nov  6 12:05:27 2021

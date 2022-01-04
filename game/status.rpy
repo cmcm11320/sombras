@@ -42,6 +42,9 @@ screen StatsUI():
                 textbutton _(luiz_1.name):
                     action SetVariable("selectedCharacter", luiz_1)
                     xsize 640
+                textbutton _(julia_1.name):
+                    action SetVariable("selectedCharacter", julia_1)
+                    xsize 640
                 textbutton "Return" action Return() 
         ## Right frame
         ## Notice that we're using selectedCharacter to show the variables here.
@@ -62,7 +65,9 @@ screen StatsUI():
                 ## We're creating a bar with the max affection of 10
                 ## You can change the max affection to 100 or whatever value you want.
                 bar value StaticValue(selectedCharacter.affection, 10) xsize 300 xoffset 80
+            
             add selectedCharacter.imageName xsize 400 ysize 400 xoffset 100 yoffset 300
+            
             
 
 style stats_button_text:

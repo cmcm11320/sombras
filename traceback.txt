@@ -1,42 +1,86 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
-    renpy.load("_reload-2")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/script.rpy", line 624, in script call
+    call message_img("[alice_1.name]", "Algo aconteceu","images/phone/pic1.png")
+  File "game/options.rpy", line 116, in script
+    $ renpy.pause()
+  File "game/options.rpy", line 116, in <module>
+    $ renpy.pause()
+  File "game/screens.rpy", line 58, in execute
+    screen phone_message(who, what):
+  File "game/screens.rpy", line 58, in execute
+    screen phone_message(who, what):
+  File "game/screens.rpy", line 59, in execute
+    vbox at incoming_message:
+  File "game/screens.rpy", line 63, in execute
+    frame:
+  File "game/screens.rpy", line 66, in execute
+    vbox:
+  File "game/screens.rpy", line 68, in execute
+    text who style "phone_message_who"
+Exception: String u'[alice_1.name' ends with an open format operation.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
+  File "game/script.rpy", line 624, in script call
+    call message_img("[alice_1.name]", "Algo aconteceu","images/phone/pic1.png")
+  File "game/options.rpy", line 116, in script
+    $ renpy.pause()
   File "renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
-    renpy.load("_reload-2")
-  File "renpy/loadsave.py", line 771, in load
-    log.unfreeze(roots, label="_after_load")
-  File "renpy/python.py", line 2200, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "renpy/python.py", line 2014, in rollback
-    self.load_failed()
-  File "renpy/python.py", line 1932, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/options.rpy", line 116, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1561, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3315, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3735, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3735, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 58, in execute
+    screen phone_message(who, what):
+  File "game/screens.rpy", line 58, in execute
+    screen phone_message(who, what):
+  File "game/screens.rpy", line 59, in execute
+    vbox at incoming_message:
+  File "game/screens.rpy", line 63, in execute
+    frame:
+  File "game/screens.rpy", line 66, in execute
+    vbox:
+  File "game/screens.rpy", line 68, in execute
+    text who style "phone_message_who"
+  File "renpy/text/text.py", line 1574, in __init__
+    self.set_text(text, scope, substitute)
+  File "renpy/text/text.py", line 1693, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 572, in _vformat
+  File "renpy/substitutions.py", line 160, in parse
+    raise Exception("String {0!r} ends with an open format operation.".format(s))
+Exception: String u'[alice_1.name' ends with an open format operation.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.10.2178
 Sombras do Passado 1.0
-Mon Nov  1 21:02:00 2021
+Sat Nov  6 12:29:04 2021

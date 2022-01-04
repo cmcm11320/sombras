@@ -1,13 +1,16 @@
-﻿init python:
+﻿
+
+init python:
 
     class Personas:
-        def __init__(self, name = "Bloqueado", sobrenome = "???", relation = "???" , bloodType = "???", major = "???", history= "???", affection = 0, imageName = "normal"):
+        def __init__(self, name = "Bloqueado", sobrenome = "???", relation = "???" , bloodType = "???", major = "???", history= "???", vivo="1", affection = 0, imageName = "normal"):
             self.name = name
             self.sobrenome = sobrenome
             self.relation = relation
             self.bloodType = bloodType
             self.major = major
             self.history = history
+            self.vivo = vivo
             ## Todos iniciam com 0 e tem max 10
             self.affection = affection
             #Localização das pastas de imagem
@@ -25,6 +28,7 @@ default isabella_1 = Personas()
 default mauricio_1 = Personas()
 default lucas_1 = Personas()
 default luiz_1 = Personas()
+default julia_1 = Personas()
 
 
 ## Primeiro a mostrar no status

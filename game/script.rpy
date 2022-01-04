@@ -126,7 +126,7 @@ label start:
     show isabella_normal
     mom "[yn] que saudade!"
     y "Oi mãe!"
-    $isabella_1.relation = "Mâe"
+    $isabella_1.relation = "Mãe"
     "Vocês duas se abraçam"
     "Vocês vão indo para casa"
     "Pela janela você ve a cidade que cresceu"
@@ -187,6 +187,7 @@ label start:
     $renpy.notify("Você Descobriu Algo Novo")
     $isabella_1.sobrenome = main_1.sobrenome
     $isabella_1.imageName = "images/Characters/Isabella/normal.png"
+    $alice_1.imageName = "/images/Characters/Alice/normal.png"
     mom "Que bom ver você"
     alice "Sim, é ótimo te ver"
     mom "Bom, vou deixar vocês à sós pra conversar"
@@ -495,6 +496,8 @@ label start:
     anna "[lucas_1.name!u]!"
     "Quando a luz acende vocês veem, que tem uma faca na barriga de Lucas"
     "Você dá um pulo para trás e o corpo cai, revelando uma grande macha de sangue na parede atrás do corpo"
+    $lucas_1.vivo = 0
+    $lucas_1.imageName = "images/Characters/Lucas/morto.png"
     alice "O QUE ESTÁ ACONTECENDO?"
     pedro "Alguem liga pra ambulância, polícia, sei lá"
     anna "MEU DEUS O QUE ACONTECEU!"
@@ -510,8 +513,159 @@ label start:
     "Eles fazem algumas perguntas para você e Alice"
     policial "Entâo... Vocês viram mais alguma coisa que pode ajudar no caso?"
     alice "Não... Mais nada..."
+    "Após o interrogatório, [alice_1.name] leva você , [pedro_1.name],[anna_1.name] e [miguel_1.name] para seus respectivos destinos"
+    miguel "Vocês acham que o que aconteceu com o [lucas_1.name] tem a ver com aquilo que aconteceu?"
+    pedro "Cala a boca!"
+    miguel "Mas a gente precisa falar sobre isso"
+    pedro "Não, a gente não precisa"
+    pedro "É a última coisa que a gente precisa falar"
+    anna "Eu sabia que quando a gente fica juntos coisas ruins acontecem"
+    alice "Então a culpa é nossa?"
+    anna "De quem seria?"
+    alice "Você esquece que vocês também estavam lá, ninguém obrigou vocês a fazer nada"
+    anna "Não?? Claro que obrigaram, vocês todos são pessoas horríveis"
+    anna "Por isso eu e o [lucas_1.name] fizemos o máximo pra ficar longe de você"
+    anna "No dia que ficamos todos juntos... Olha o que acontece"
+    pedro "Cala a boca vocês todos!"
+    pedro "O que aconteceu hoje foi um incidente separado"
+    pedro "Não tem nada a ver com o que aconteceu"
+    pedro "E ninguém mais vai falar sobre isso"
+    pedro "Não tem nada que prove que tem alguma relação"
+    menu:
+        "Contar sobre a mensagem":
+            $segredo = 1
+        "Não falar nada":
+            $segredo = 0
+    if segredo == 1:
+        y "Na verdade tem uma coisa"
+        alice "[yn]..."
+        y "Não, eles precisam saber"
+        alice "..."
+        anna "Que porra vocês sabem?"
+        y "Tinha uma mensagem no corpo hoje"
+        y "Estava escrito 'Ele mereceu, e vocês todos também' "
+        "..."
+        anna "E vocês esconderam isso da gente?"
+        alice "Eu escondi da polícia"
+        alice "De nada, inclusive"
+        anna "A gente precisa mostrar pra polícia"
+        pedro "Você ta ficando doida?"
+        pedro "[alice_1.name] fez a coisa certa"
+        anna "Do que você ta falando? É a nossa segurança que estamos falando"
+        pedro "Cala a boca, se a gente mostra isso pra polícia, vamos ter que explicar o motivo"
+        alice "E o motivo de eu ter escondido a mensagem"
+        anna "Isso não é problema meu"
+        anna "É a minha segurança que estamos falando"
+        anna "Eu não to nem aí pro que acontece com vocês"
+        pedro "É mesmo? Você se esqueceu do que você fez?"
+        anna "..."
+        anna "Não, eu nunca esqueci, você sabe muito bem disso"
+        anna "Eu só estou preocupada"
+        alice "Todos nós estamos"
+    
+    miguel "E se vierem atrás da gente?"
+    pedro "Ninguém vai vir fazer nada"
+    miguel "Vieram atrás do [lucas_1.name]..."
+    pedro "Ele estava despreparado"
+    pedro "Nós não estamos"
+    "Alice chega na casa de [pedro_1.name], deixando ele e [anna_1.name]"
+    "Agora se dirige para sua casa"
+    alice "Tenham cuidado a partir de agora"
+    if segredo == 1:
+        miguel "E se a mensagem tinha razão?"
+        miguel "E se a gente realmente merece tudo isso?"
+        alice "A gente merece muita coisa..."
+        alice "Mas o [lucas_1.name] não merecia isso"
+        alice "Ele era uma pessoa boa"
+        miguel "Ninguém é totalmente bom"
+        miguel "A gente devia saber disso"
+    "Vocês chegam em sua casa"
+    alice "Tchau [yn]"
+    y "Tchau pessoal"
 
+    #ep 2
 
+    mom "[yn], você não comeu nada..."
+    mom "Eu entendo que o que aconteceu ontem foi muito dificil para você, mas você precisa comer"
+    y "É, eu sei..."
+    mom "Eu sabia que aquela familia voltar pra cidade era uma coisa ruim"
+    y "Quem voltou?"
+
+    if main_1.name == "Luiz":
+        $luiz_1.name = "Jorge"
+    else:
+        $luiz_1.name = "Luiz"
+
+    mom "Ah eu não devia ter comentado..."
+    y "Não, agora eu preciso saber"
+    mom "Certo... Tudo bem"
+    mom "Eu não queria trazer isso a tona, ainda mais com você aqui tão pouco tempo"
+    y "Mãe... Me conta por favor"
+    mom "Você se lembra daquele homem horrível, o [luiz_1.name]"
+    y "..."
+    y "Infelizmente eu me lembro"
+    mom "Então, você se lembra como ele... Desapareceu anos atrás"
+    mom "A filha dele nunca aceitou o desaparecimento, ela está morando na antiga casa dele"
+    mom "A Sabrina, mãe daquele seu amigo [pedro_1.name] disse que ela está investigando o que aconteceu com o pai"
+    y "Investigando?"
+    mom "Sim, ela acha que ele ainda está por aí"
+    mom "Felizmente pra nós, ele não está por aí"
+    mom "Aquele homem horrível"
+    mom "Se a filha dele soubesse das coisas que ele fez, ela não estaria tentando encontra-lo"
+    if main_1 == "Julia" or main_1.name == "Júlia":
+        $julia_1.name = "Gabriela"
+    else:
+        $julia_1.name = "Júlia"
+    mom "Fazer aquilo com a [julia_1.name], uma criança"
+    y "Sim..."
+    y "Mas não podemos culpar ela, ela não sabe o que aconteceu"
+    mom "É, mas mesmo assim. Me dá calafrios"
+    mom "Desculpe falar sobre isso, eu sei que deve te trazer memórias ruins"
+    mom "Mas eu só não consigo acreditar que ela está na cidade"
+    mom "E pouco tempo depois, acontece essa tragédia"
+    mom "Só... Tome cuidado, [yn]"
+    mom "Por favor... Por mim..."
+    y "Sim, mãe, eu vou tomar"
+    "Seu telefone toca"
+    call phone_start
+
+    call message_start("[alice_1.name]", "Ei [yn], precisamos conversar")
+
+    call reply_message("Tudo bem")
+    call message("[alice_1.name]", "Todos nós")
+
+    call message_img("[alice_1.name]", "Algo aconteceu","images/phone/pic1.png")
+
+    call screen phone_reply("não acredito!","choice1","eu sei quem está fazendo isso","choice2")
+    # i made a special reply menu called phone_reply3 which can use 3. if you wish to have more you can make a new reply4 and see how i modified the code between the first reply code
+##call screen phone_reply3("awesome!","choice1","lame","choice2","im gay","choice3")
+
+    label choice1:    
+    # always add this for both choices after the menu, this hides the previous message that we left visible during the menu
+        call phone_after_menu
+    
+    # whenever you put the sender name to be "me" it is the player characters own message!
+        call message_start("[main_1.name]", "não acredito!")
+        call message("[alice_1.name]", "Vem pra cá agora")
+
+        jump aftermenu
+    
+    label choice2:
+        call phone_after_menu
+        call message_start("[main_1.name]", "eu sei quem está fazendo isso")
+        call message("[alice_1.name]", "então conte pra todo mundo hoje a tarde")
+    
+        jump aftermenu
+
+    
+    label aftermenu:
+        call message("[alice_1.name]", "Precisamos conversar")
+    
+        # this one puts away the phone!
+        call phone_end
+    
+    "Você vai até o lugar encontrar em [alice_1.name]"
+    y "[alice_1.name]... Onde você está?"
 
 
     # This ends the game.
