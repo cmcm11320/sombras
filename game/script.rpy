@@ -224,10 +224,10 @@ label start:
     else:
         $lucas_1.name = "Lucas"
 
-    if main_1.name == "Anna" or main_1.name == "Ana":
-        $anna_1.name = "Anita"
+    if main_1.name == "Luana" or main_1.name == "Luanna":
+        $anna_1.name = "Lúcia"
     else:
-        $anna_1.name = "Anna"
+        $anna_1.name = "Luana"
 
     if main_1.name == "Miguel":
         $miguel_1.name = "Jorge"
